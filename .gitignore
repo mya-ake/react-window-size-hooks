@@ -22,4 +22,4 @@ yarn-error.log*
 *.sw*
 
 coverage
-.next
+dist
