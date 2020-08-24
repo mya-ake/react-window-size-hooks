@@ -4,11 +4,11 @@ import type { WindowResizeObserver } from 'window-resize-subject';
 
 /** types */
 type SizeValue = number;
-type State = {
+type Size = {
   width: SizeValue;
   height: SizeValue;
 };
-export type InitailSize = State;
+export type InitailSize = Size;
 
 /** singleton */
 const subject = new WindowResizeSubject();
@@ -25,7 +25,7 @@ const createInitailSize = (size?: InitailSize): InitailSize => {
 
 /** main */
 export const useWindowSize = (initailSize?: InitailSize) => {
-  const [size, setSize] = useState<State>(createInitailSize(initailSize));
+  const [size, setSize] = useState<Size>(createInitailSize(initailSize));
   const [uid] = useState(Symbol('window-size'));
 
   useEffect(() => {
