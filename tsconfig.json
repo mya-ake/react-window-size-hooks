@@ -24,6 +24,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["./src/**/*.ts", "./tests/**/*.ts", "./tests/**/*.vue"],
+  "include": ["./src/**/*.ts", "./tests/**/*.ts"],
   "exclude": ["node_modules"]
 }
