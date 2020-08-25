@@ -13,13 +13,19 @@ export type InitailSize = Size;
 /** singleton */
 const subject = new WindowResizeSubject();
 
-/** functions */
-const createInitailSizeValue = (value?: SizeValue): SizeValue => value ?? 0;
+/** privates */
+const isBrowser = typeof window !== 'undefined';
+const getWindowWidth = (): SizeValue => (isBrowser ? window.innerWidth : 0);
+const getWindowHeight = (): SizeValue => (isBrowser ? window.innerHeight : 0);
+const createInitailWidth = (value?: SizeValue): SizeValue =>
+  value ?? getWindowWidth();
+const createInitailHeight = (value?: SizeValue): SizeValue =>
+  value ?? getWindowHeight();
 
 const createInitailSize = (size?: InitailSize): InitailSize => {
   return {
-    width: createInitailSizeValue(size?.width),
-    height: createInitailSizeValue(size?.height),
+    width: createInitailWidth(size?.width),
+    height: createInitailHeight(size?.height),
   };
 };
 
@@ -46,9 +52,7 @@ export const useWindowSize = (initailSize?: InitailSize) => {
 };
 
 export const useWindowWidth = (initailWidth?: SizeValue) => {
-  const [size, setSize] = useState<SizeValue>(
-    createInitailSizeValue(initailWidth),
-  );
+  const [size, setSize] = useState<SizeValue>(createInitailWidth(initailWidth));
   const [uid] = useState(Symbol('window-size'));
 
   useEffect(() => {
@@ -70,7 +74,7 @@ export const useWindowWidth = (initailWidth?: SizeValue) => {
 
 export const useWindowHeight = (initailHeight?: SizeValue) => {
   const [size, setSize] = useState<SizeValue>(
-    createInitailSizeValue(initailHeight),
+    createInitailHeight(initailHeight),
   );
   const [uid] = useState(Symbol('window-size'));
 

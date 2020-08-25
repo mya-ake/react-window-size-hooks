@@ -1,3 +1,5 @@
+const env = process.env.TEST_ENV === 'node' ? 'node' : 'jsdom';
+
 module.exports = {
   preset: 'ts-jest',
   rootDir: process.cwd(),
@@ -9,6 +11,7 @@ module.exports = {
   transformIgnorePatterns: ['/node_modules/'],
   testMatch: ['**/tests/unit/**/*.spec.ts'],
   testURL: 'http://localhost/',
+  testEnvironment: env,
   globals: {
     'ts-jest': {
       tsConfig: '<rootDir>/tests/tsconfig.json',

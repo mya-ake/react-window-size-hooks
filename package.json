@@ -1,8 +1,14 @@
 {
   "name": "react-window-size-hooks",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Reactivity window size for React.",
+  "main": "dist/index.common.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/mya-ake/react-window-size-hooks.git",
+  "bugs": {
+    "url": "https://github.com/mya-ake/react-window-size-hooks/issues"
+  },
   "author": "mya-ake <make.app.ts@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -13,7 +19,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "run-s test:*",
-    "test:unit": "jest --config tests/unit/jest.config.js",
+    "test:unit": "run-s test:unit:*",
+    "test:unit:jsdom": "TEST_ENV=jsdom jest --config tests/unit/jest.config.js",
+    "test:unit:node": "TEST_ENV=node jest --config tests/unit/jest.config.js",
     "prerelease": "run-s build",
     "release": "np"
   },
