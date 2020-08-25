@@ -5595,10 +5595,10 @@ widest-line@^3.1.0:
   dependencies:
     string-width "^4.0.0"
 
-window-resize-subject@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/window-resize-subject/-/window-resize-subject-1.4.0.tgz#671d5b9e3cebf9ce442a7748f0a0af53021fcc53"
-  integrity sha512-im0YpBNsdoX0CbuOyy/8qR7nsA1BQ9meI/+dQEIr8KW8YQ5iLcfBAVgBkCH2NghhOrkI5oyt+er7Tqdbj+zj/g==
+window-resize-subject@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/window-resize-subject/-/window-resize-subject-1.4.1.tgz#9f785df94a6618ded0654d6be5a2ad4bc6a586c3"
+  integrity sha512-UB+vC7fKgZVfgZnylH3yLlcfRZW5wT+i1DyqgbVblxNDwyvSnHf5qmhD4NsuztLzK8t7mXLmGm8YNcIkCw4jsA==
 
 word-wrap@~1.2.3:
   version "1.2.3"

@@ -25,6 +25,9 @@
     "prerelease": "run-s build",
     "release": "np"
   },
+  "dependencies": {
+    "window-resize-subject": "^1.4.1"
+  },
   "devDependencies": {
     "@testing-library/react-hooks": "^3.4.1",
     "@types/jest": "^26.0.10",
@@ -63,8 +66,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "dependencies": {
-    "window-resize-subject": "^1.4.0"
   }
 }
