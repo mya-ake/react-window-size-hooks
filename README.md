@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-window-size-hooks.svg)](https://badge.fury.io/js/react-window-size-hooks)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-![CI Status](https://github.com/mya-ake/react-window-size-hooks/workflows/Main%20Workflow/badge.svg)
+![CI Status](https://github.com/mya-ake/react-window-size-hooks/workflows/CI/badge.svg)
 
 > React hooks to get the window size.
 
