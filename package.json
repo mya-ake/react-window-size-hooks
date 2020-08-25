@@ -1,6 +1,6 @@
 {
   "name": "react-window-size-hooks",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Reactivity window size for React.",
   "main": "dist/index.common.js",
   "unpkg": "dist/index.umd.js",
