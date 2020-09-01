@@ -5610,9 +5610,9 @@ widest-line@^3.1.0:
     string-width "^4.0.0"
 
 window-resize-subject@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/window-resize-subject/-/window-resize-subject-1.4.1.tgz#9f785df94a6618ded0654d6be5a2ad4bc6a586c3"
-  integrity sha512-UB+vC7fKgZVfgZnylH3yLlcfRZW5wT+i1DyqgbVblxNDwyvSnHf5qmhD4NsuztLzK8t7mXLmGm8YNcIkCw4jsA==
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/window-resize-subject/-/window-resize-subject-1.4.2.tgz#a9aab072a3299b04acc89d179b12147482e5993f"
+  integrity sha512-MO4o0jv0/NSaOI0RfYhjNktyXeQjoPVeObkRuglvuH0qoNfQpxUY8QvHcw9XYwmEL9rpMQy6qNvbz6wyad0Zyg==
 
 word-wrap@~1.2.3:
   version "1.2.3"
