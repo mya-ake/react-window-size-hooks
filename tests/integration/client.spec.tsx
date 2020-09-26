@@ -1,6 +1,10 @@
 import React from 'react';
 import { render, act } from '@testing-library/react';
-import { WindowSizeComponent, WindowWidthComponent, WindowHeightComponent } from '~fixtures/TestComponents';
+import {
+  WindowSizeComponent,
+  WindowWidthComponent,
+  WindowHeightComponent,
+} from '~fixtures/TestComponents';
 import {
   getWindowWidth,
   getWindowHeight,
@@ -46,7 +50,9 @@ describe('useWindowWidth', () => {
 describe('useWindowHeight', () => {
   it('window height is rendered', () => {
     const { getByTestId } = render(<WindowHeightComponent />);
-    expect(getByTestId('height').textContent).toBe(getWindowHeight().toString());
+    expect(getByTestId('height').textContent).toBe(
+      getWindowHeight().toString(),
+    );
   });
 
   it('the value is updated in the resize event', () => {
