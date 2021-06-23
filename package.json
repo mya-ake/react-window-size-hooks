@@ -30,7 +30,7 @@
     "window-resize-subject": "^1.4.3"
   },
   "devDependencies": {
-    "@testing-library/react": "^11.0.4",
+    "@testing-library/react": "^12.0.0",
     "@testing-library/react-hooks": "^3.4.1",
     "@types/jest": "^26.0.10",
     "@types/react": "^17.0.0",
